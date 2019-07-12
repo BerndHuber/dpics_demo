@@ -1,0 +1,124 @@
+.vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  height:100px;
+  font-size:12px;
+  align:left;
+}
+
+.row:nth-of-type(2n) {
+  background: whitesmoke;
+}
+
+.parentsentence {
+  min-width:50%;
+  position: relative;
+}
+
+.actualsentence {
+  max-width:300px;
+}
+
+.flagcolumn {
+  position: relative;
+}
+
+body {
+  width: 100%;
+}
+
+.bgt {
+        font-weight: bold;
+        color: green;
+}
+
+
+tr { border: none; }
+
+table {
+  border-collapse:collapse;
+}
+
+.tdh-border-right {
+  border-right: solid 1px #C0C0C0;
+}
+
+
+.header-content {
+  position: absolute;
+  bottom: 0;
+}
+
+
+<table>
+  <thead>
+    <tr>
+      <td class="parentsentence "><div class="header-content">First Heading</div></td>
+      <th><div class="vertical ">Second Heading</div></th>
+      <th><div class="vertical ">Second Heading</div></th>
+      <th><div class="vertical ">Second Heading</div></th>
+      <th><div class="vertical ">Second Heading</div></th>
+      <th><div class="vertical ">Second Heading</div></th>
+      <th><div class="vertical ">Second Heading</div></th>
+      <th><div class="vertical ">Second Heading</div></th>
+      <th><div class="vertical ">Second Heading</div></th>
+      <th class="flagcolumn"><div class="header-content">Last Headings</div></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="row">
+      <td class="actualsentence">This is an example parent sentence that may occur during this test</td>
+      <td class="bgt tdh-border-right">&#10004;</td>
+      <td class="bgt tdh-border-right">&#10004;</td>
+      <td class="tdh-border-right"></td>
+      <td class="tdh-border-right"></td>
+      <td class="tdh-border-right"></td>
+      <td>a</td>
+    </tr>
+    <tr class="row">
+      <td>Typical Cell cell</td>
+      <td class="tdh-border-right"></td>
+      <td></td>
+      <td></td>
+      <td class="bgt">&#10004;</td>
+      <td></td>
+      <td>a</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>First Heading</th>
+      <th><div class="vertical">Second Heading</div></th>
+      <th><div class="vertical">Second Heading</div></th>
+      <th><div class="vertical">Second Heading</div></th>
+      <th><div class="vertical">Second Heading</div></th>
+      <th><div class="vertical">Second Heading</div></th>
+      <th>First Heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Typical cell</td>
+      <td class="bgt"></td>
+      <td class="bgt"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Typical Cell cell</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="bgt"></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
